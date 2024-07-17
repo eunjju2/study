@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+        #header > h1 { color: red; } /*`id=”header”`인 태그 바로 아래 위치한 h1를 선택*/
+        #section > h1 { color: orange; } /*`id=”section”`인 태그 바로 아래 위치한 h1를 선택*/
+    </style>
+</head>
+<body>
+    <div id="header">
+       <h1 class="title">Lorem ipsum</h1> <!-- 빨간색 적용 -->
+        <div id="nav"> 
+            <h1>Navigation</h1> <!-- 자손이 아니기 때문에 적용x -->
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">Lorem ipsum</h1> <!-- 주황색 적용 -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</body>
+</html>
