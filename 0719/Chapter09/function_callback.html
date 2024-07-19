@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callTenTimes(callback) {
+            for (let i=0; i<10; i++) {
+                callback(); // 열번 호출됨
+            }
+        }
+
+        let fun = function() {
+            alert('함수 호출'); //매개변수 callback()으로 fun을 전달
+        };
+
+        callTenTimes(fun);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

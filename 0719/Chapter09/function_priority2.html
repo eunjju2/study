@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Basic</title>
+    <script>
+      //1
+      //변수 fun 선언하면서  함수 할당
+      var fun = function () {
+        alert("함수_A");
+      }; //fun = 함수_A
+      var fun = function () { //변수 fun에 익명함수 할당
+        alert("함수_B");
+      };//fun = 함수_B
+      var fun = function () {
+        alert("함수_A");
+      };//fun = 함수 B
+      function fun() { // 함수로 선언시는 변수와 다르게 호이스팅되어 코드 상단으로 내부적으로 이동-> <script>최 상단 1번으로 이동된다고 보시면 됩니다. 
+        alert("함수_B");
+      }
+      fun();//최종 호출 결과는  var fun = function(){}...에 fun = 함수_B 출력
+
+      //https://ko.javascript.info/var#ref-560
+    </script>
+  </head>
+  <body></body>
+</html>
+

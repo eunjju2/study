@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let person = {
+            name : '이은수', //속성
+            eat : function(food) { //메서드
+                alert(this.name +'님이 ' + food +'를 먹습니다'); // this = 자기자신
+            }
+        };
+
+        person.eat('케이크');
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

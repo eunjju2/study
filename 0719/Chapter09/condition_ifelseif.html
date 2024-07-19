@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let date = new Date();
+        let hours = date.getHours();
+
+        if(hours < 5){ 
+            alert('수면 시간');
+        }
+        else if(hours < 7) { //5~7시
+            alert('출근 준비');
+        }
+        else if(hours < 9) { //7~9시
+            alert('출근');
+        }
+        else if(hours < 12) { //9~12시
+            alert('오전 공부');
+        }
+        else if(hours < 14){ //12~14시
+            alert('식사');
+        }
+        else if(hours < 18) { //14~18시
+            alert('오후 공부');
+        }
+        else { //18시 ~
+            alert('퇴근');
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
