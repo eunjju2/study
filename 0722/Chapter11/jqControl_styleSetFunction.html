@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        let output = "";
+        for (let i = 0; i < 256; i++) {
+          output += "<div></div>";
+        }
+        document.body.innerHTML = output;
+
+        //
+        $("div").each(function (index) { //each()로 div 반복
+          //red, green, blue 값 변경해보기 -> 여기서 값 변경해보시면 될 것 같습니다.
+          let red = 255;
+          let green = 165 - Math.floor((index / 256) * 165); // 감소하는 녹색 값
+          let blue = Math.floor((index / 256) * 255); //
+
+          $(this).css({ //현재 idex의 css에 적용
+            height: 2,
+            backgroundColor: "rgb(" + red + "," + green + "," + blue + ")",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
