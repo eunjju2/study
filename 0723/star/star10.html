@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2번</title>
+    <script>
+        const star = '*' //출력할 문자
+        const num = 5 // 줄
+        let result = "" //결과값을 담을 변수 (문자열로 담은 뒤 출력)
+        // num 변수의 값만큼 반복
+        for (let i = 0; i <= num; i++) {
+            //num-(줄수-1) 만큼 반복
+            for(let j = num; j > i ; j--) {
+                result += '&nbsp;' // result 변수에 공백 문자열을 추가
+            }
+            // 각 줄마다 (2 * (줄수))-1의 star이 출력되도록 반복 
+            for(let k = 0; k < (2*i)-1 ; k++) {
+                result += '*' // result 변수에 star 문자열을 추가
+            }
+            result += '<br>'
+        }
+        // num 변수값만큼 감소 형태로 반복
+        for (let i = num; i >= 0; i--) {
+            //num-(줄수-1) 만큼 반복
+            for(let j = num; j > i ; j--) {
+                result += '&nbsp;' // result 변수에 공백 문자열을 추가
+            }
+             // 각 줄마다 (2 * (줄수))-1의 star이 출력되도록 반복 
+            for(let k = 0; k < (2*i)-1 ; k++) {
+                result += '*' // result 변수에 star 문자열을 추가
+            }
+            result += '<br>' //줄바꿈
+        }
+        document.write(result)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

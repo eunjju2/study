@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2번</title>
+    <script>
+        const star = '*' //출력할 문자
+        const num = 5 // 줄
+        let result = "" //결과값을 담을 변수 (문자열로 담은 뒤 출력)
+
+        
+        // num 변수의 값만큼 반복
+        for (let i = 0; i < num; i++) {
+            for(let j = 0; j <= i ; j++) { //줄 수만큼 반복 ex)3번째 줄이면 3번 반복
+                result += '*' // result 변수에 star 문자열을 추가
+            }
+            result += '<br>' // star 문자열을 줄 수만큼 추가했으면 줄바꿈
+        }
+
+        document.write(result)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
