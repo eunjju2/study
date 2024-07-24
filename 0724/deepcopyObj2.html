@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //객체 깊은 복사 
+        const pet = {
+            name : 'pori',
+            age : 4,
+            animal : 'dog'
+        }
+
+        const popo = {...pet,
+            name : 'popo',
+            age : 8,
+            vaccin: true
+        }
+
+
+        console.log(JSON.stringify(pet)) //{"name":"pori","age":4,"animal":"dog"}
+        console.log(JSON.stringify(popo)) //{"name":"popo","age":8,"animal":"dog","vaccin":true}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this 키워드</title>
+    <script>
+        //prototype 메소드 사용해보기
+        String.prototype.contain = function (data) {
+            return this.indexOf(data) >=0
+        }
+
+        Array.prototype.contain = function (data) {
+            return this.indexOf(data) >= 0
+        }
+
+        const a = '안녕하세요'
+        console.log('안녕 in 안녕하세요 : ', a.contain('안녕'))
+        console.log('없음 in 안녕하세요 : ', a.contain('없음'))
+
+        const b = [273, 32, 103, 57, 52]
+        console.log('273 in [273, 32, 103, 57, 52] : ', b.contain(273))
+        console.log('0 in [273, 32, 103, 57, 52] : ', b.contain(0))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

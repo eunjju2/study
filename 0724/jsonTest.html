@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //JSON 메소드 사용해보기
+        const data = [
+            {
+            name : '혼자 공부하는 파이썬',
+            price : 18000,
+            publisher : '한빛미디어'
+        }, 
+        {
+            name : 'HTML5 웹 프로그래밍 입문',
+            price : 26000,
+            publisher : '한빛 아카데미'
+        }
+        ]
+
+        const json = JSON.stringify(data)
+        console.log(json)
+        console.log(JSON.parse(json))
+
+        /*
+        출력 결과
+        {
+            "name": "혼자 공부하는 파이썬",
+            "price": 18000,
+            "publisher": "한빛미디어"
+        },
+        {
+            "name": "HTML5 웹 프로그래밍 입문",
+            "price": 26000,
+            "publisher": "한빛 아카데미"
+        }
+        ]
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

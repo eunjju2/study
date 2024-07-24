@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.querySelector('h1') //querySelector() 메소드를 사용해서 h1 태그를 추출하고 조작
+
+            //텍스트와 스타일 변경
+            header.textContent = 'HEADERS'
+            header.style.color = 'green'
+            header.style.backgroundColor = 'pink'
+            header.style.padding = '20px'
+
+        })
+    </script>
+</head>
+<body>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+</body>
+</html>
