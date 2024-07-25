@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rects = document.querySelectorAll('.rect')
+
+            rects.forEach((rect, index) => {
+                const width = (index + 1) * 100 // index값은 [0,1,2,3]이 반복 '.rect' 클래스를 가진 요소가 4개이므로
+                // width는 100, 200, 300, 400이 됨
+                const src = 'pori.jpeg'
+                //const src = `http://loremflickr.com/${width}/250`
+                rect.setAttribute('width', width) //특정 속성에 값을 지정
+                rect.setAttribute('src', src)
+            })
+        })
+    </script>
+</head>
+<body>
+    <img class ="rect">
+    <img class ="rect">
+    <img class ="rect">
+    <img class ="rect">
+</body>
+</html>
