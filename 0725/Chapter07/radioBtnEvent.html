@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const output = document.querySelector('#output')
+            const radios = document.querySelectorAll('[name="fruit"]') //[속성=값]
+
+            radios.forEach((radio) => {
+                radio.addEventListener('change', (event) => {
+                    const current = event.currentTarget
+                    if(current.checked) {
+                        output.textContent = `좋아하는 과일은 ${current.value}이시군요!`
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <h3>#좋아하는 과일 선택</h3>
+    <input type="radio" name="fruit" value="딸기">
+    <span>딸기</span>
+    <input type="radio" name="fruit" value="바나나">
+    <span>바나나</span>
+    <input type="radio" name="fruit" value="복숭아">
+    <span>복숭아</span>
+    <input type="radio" name="fruit" value="블루베리">
+    <span>블루베리</span>
+    <input type="radio" name="fruit" value="기타">
+    <span>기타</span>
+    <hr>
+    <h3 id="output"></h3>
+</body>
+</html>

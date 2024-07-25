@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const input = document.querySelector('input')
+            const button = document.querySelector('button')
+            const p = document.querySelector('p')
+
+            button.addEventListener('click', () => {
+                const cels = Number(input.value)
+
+                if(isNaN(cels)){
+                    p.textContent = '온도를 입력해주세요'
+                    return
+                }
+
+                const fah = (cels * 9/5) + 32
+                p.textContent = `${fah} ℉(화씨온도)`
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="text"> ℃(섭씨온도) <br>
+    <button>계산</button>
+    <p></p>
+</body>
+</html>
