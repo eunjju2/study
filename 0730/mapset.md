@@ -166,7 +166,6 @@ console.log(difference); //{1} 차집합
 ```
 <br>
 <hr>
-<br>
 
 ### Map
 
