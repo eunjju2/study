@@ -1,0 +1,39 @@
+/* 실습2 */
+/* .active{
+    color : #ef1b1b;
+} */
+
+/* 실습6 */
+/* .active{
+    color : #ef1b1b;
+} */
+
+
+/* 실습18 */
+/* .active{
+    color : #ef1b1b;
+} */
+
+
+/*실습19*/
+/* ul{
+    list-style : none;
+}
+li {
+    font-size: 20px;
+    line-height: 150%;
+}
+.check{
+    color : black;
+}
+
+.active{
+    color : #ccc;
+} */
+
+/*실습20~21*/
+.box{
+    width: 100px;
+    height:100px;
+    background-color: lightblue;
+}
