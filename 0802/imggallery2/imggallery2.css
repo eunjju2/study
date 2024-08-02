@@ -1,0 +1,37 @@
+.wrapper {
+    width : 550px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#container {
+    position: absolute;
+    
+}
+
+#container > img {
+    width: 100%;
+    display: none;
+}
+
+#container > img.active{
+    display: flex;
+}
+
+button {
+    position: absolute;
+    height: 100%;
+    background-color: seashell;
+    top: 0;
+    color: darkblue;
+
+}
+
+#prev {
+    left : 0;
+
+}
+
+#next {
+    right: 0;
+}
