@@ -1,0 +1,21 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center;
+  }
+
+.gallery img {
+    width: 150px;
+    height : 150px;
+    margin : 10px;
+    cursor : grab;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+}
+
+.gallery img.dragging {
+    opacity: 0.5;
+    border: solid yellow;
+    box-shadow: 5px 5px 15px rgba(249,255,1,0.5);
+}
