@@ -1,0 +1,94 @@
+/*실습3~8*/
+/* .container { 
+    background-color:palegoldenrod ;
+    padding : 30px;
+    margin : 10px;
+}
+.container2 {
+    background-color: #e3758b;
+    padding : 30px;
+    margin : 10px;
+}
+
+button {
+    width : 70px;
+    height : 70px;
+    border : none;
+    font-size: 30px;
+    background-color : gray;
+} */
+
+/*실습9*/
+/* .container { 
+    background-color:palegoldenrod ;
+    padding : 30px;
+    margin : 10px;
+}
+.container2 {
+    background-color: #e3758b;
+    padding : 30px;
+    margin : 10px;
+}
+
+button {
+    width : 70px;
+    height : 70px;
+    border : none;
+    font-size: 30px;
+    background-color : gray;
+}
+
+#appendChildBtn {
+    width: 100px;
+    font-size : 10px;
+} */
+
+/* 실습10 */
+/* .container { 
+    background-color:palegoldenrod ;
+    padding : 30px;
+    margin : 10px;
+}
+.container2 {
+    background-color: #e3758b;
+    padding : 30px;
+    margin : 10px;
+}
+
+button {
+    width : 70px;
+    height : 70px;
+    border : none;
+    font-size: 30px;
+    background-color : gray;
+}
+
+#appendChildBtn {
+    width: 100px;
+    font-size : 10px;
+}
+
+#insertBeforeBtn
+{
+    width: 100px;
+    font-size : 10px;
+} */
+
+/* 실습11 */
+.container { 
+    background-color: palevioletred;
+    padding : 30px;
+    margin : 10px;
+}
+button {
+    width : 70px;
+    height : 70px;
+    border : none;
+    font-size: 30px;
+    background-color : gainsboro;
+}
+
+.dragging {
+    opacity: 0.5;
+    border: 1px solid gray;
+}
