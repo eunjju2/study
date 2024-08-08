@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h1>안녕하세요</h1>
+    
+    <p><%= "Hello" + "World" %></p> <!--연산 가능-->
+    <p><%= 29 + 2 %></p>  <!--연산 가능-->
+    <p><%= true ? '참' : '거짓'  %></p> <!--삼항 연산자-->
+    <p><%= false ? '참' : '거짓'  %></p>
+    <p><%= "<h3>escaped</h3>" %></p> <!--<h3>escaped</h3>-->
+    <p><%- "<h3>escaped</h3>" %></p> <!--escaped-->
+
+    <div>
+        <% let str = "hello" %> <!--변수 선언-->
+        <%= str  %> <!--변수 사용할 때는 = 붙이기-->
+    </div>
+
+    <div>
+        <%if(true){%>
+            <h2>출력!!</h2>
+        <%}%>
+        <%if(false) { %>
+            <h2>출력!!</h2>
+        <% } %>
+    </div>
+    <div>
+        <% if(true){ %>
+            <div>참</div>
+        <% } else {%>
+            <div>거짓</div>
+        <% }%>
+    </div>
+
+    <div>
+        <% for(let i=1; i<=3; i++) { %>
+            <div><a href="/order/<%= i %>">test <%= i %>로</a></div>
+        <% } %>
+    </div>
+
+    <div>
+        <% let arr = ['apple', 'banana', 'cherry'] %>
+        <% arr.forEach((fruit) => {%>
+            <h3><%= fruit %> 입니다.</h3>
+        <% }) %> 
+    </div>
+
+    <div>
+        <% let arr2 = ['map1', 'map2', 'map3'] %>
+        <% arr.map((val) => { %>
+            <h3><%= val  %>입니다.</h3>
+        <% }) %>
+    </div>
+
+    <ul>
+        <% for(let person of people) {%>
+            <li><%= person.name  %></li>
+        <% }%>
+    </ul>
+
+    <ul>
+        <% for(let person of people) {%>
+            <% if (person.name === 'kim') {%>
+            <li><%= person.name  %></li>
+            <% }%>
+        <% }%>
+    </ul>
+
+    <div class="container">
+        <h1>LIST</h1> <!--리스트 추가 부분-->
+        <form action="/addTask" method="POST">
+            <input type="text" name="newTask" placeholder="할 일 목록 추가">
+            <button type="submit">추가하기</button>
+        </form>
+        <ul> <!--추가한 내용 보여주는 곳-->
+            <% tasks.forEach(task => {%>
+                <li>
+                    <%=task  %>
+                    <form action="/deleteTask" method="POST"> <!--지워주기 위해 필요한 부분-->
+                        <input type="hidden" name="task" value="<%= task %>">
+                        <button type="submit">지우기</button>
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+
+
+    <!--문제1-->
+    <div>
+        <ul>
+            <% users.forEach((user) => { %>
+                <li class="<%= user.role%>">
+                    name: <%=user.name %>, age: <%=user.age %>, role: <%=user.role %> 
+                <%= user.age >= 18 ? 'pass' : 'reject' %>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+
+</body>
+</html>

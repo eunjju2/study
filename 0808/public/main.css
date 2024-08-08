@@ -1,0 +1,15 @@
+body{
+    background-color: #ccc;
+}
+
+.front{
+    color: palevioletred;
+}
+
+.back{
+    color : seagreen;
+}
+
+.full {
+    color : saddlebrown;
+}
